@@ -25,11 +25,15 @@ public class Main{
             jumlahKuadratIteratif(n);
             waktuTotal = (System.nanoTime() - waktuAwal);
             System.out.println("Waktu Iteratif pada n="+n+" : "+ waktuTotal + "ns");
-
+            System.out.println("Jumlah Kuadrat Iteratif pada n="+n+" : "+ jumlahKuadratIteratif(n));
+            
             waktuAwal = System.nanoTime();
             jumlahKuadratRekursif(n);
             waktuTotal = (System.nanoTime() - waktuAwal);
             System.out.println("Waktu Rekursif pada n="+n+" : "+ waktuTotal + "ns");
+            System.out.println("Jumlah Kuadrat Rekursif pada n="+n+" : "+ jumlahKuadratRekursif(n));
+        
+            System.out.println("");
         }
 
     }
